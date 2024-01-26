@@ -1,0 +1,194 @@
+Climate Resilience Maturity Model (CRMM) for Essential Services Providers  	   
+
+Executive Summary
+
+All US cities are in some stage of awareness and action related to hardening their infrastructure assets and adapting their critical functions and processes to operate reliably in the more challenging conditions wrought by a changing climate. This model offers a mechanism for entities to baseline their present state and set goals for heightened resilience in the near-midterm future. When aggregated across the six sectors assessed, a city's resilience posture is made visible to all manner of interested stakeholders. Also please note:
+
+-	Criteria and annual ratings are publicly accessible, though particularly sensitive data may be reserved for USG use.
+-	This model is fundamentally multi-sector and is designed to take cross-sector interdependencies into full account (e.g., energy, water, communications, transportation, etc.).
+-	Intended to motivate accelerated action, numeric or letter grades for each service provider type are rolled up into a city score.
+-	Several large US energy and water utilities have lauded earlier CRMM versions in formal proceedings, and UN personnel have recently inquired whether this model could be applied at regional or national levels. 
+
+
+I. Introduction 
+ 
+Depending on geography, disruptive and destructive physical forces stemming from or exacerbated by a changing climate are already landing on infrastructures. While decarbonization is the watchword in climate mitigation, utilities, as stewards of our most critical infrastructures, must be proactive in their preparation for present and coming hazards of a kind and/or intensity they've not yet experienced, but which are projected by climate models. No infrastructure organizations function in a vacuum, so electric, natural gas, communications, transportation, and water and wastewater organizations must update their planning processes and reach out to regulators, stakeholders, and the communities they serve if they are to meet these enormous challenges.  
+ 
+And very many organizations and individuals have a stake in understanding whether the utilities serving particular cities or regions are updating their plans and processes ahead of the arrival of material physical climate impacts, or else move more slowly either unaware of the risks, or hoping that nothing too catastrophic will happen on their watch.  Some are in motion and serve as early models for best practices, so the intent of this CRMM is to help guide utilities towards higher levels of maturity in this still relatively young field. In addition, it will help generate a source of comparative data for those with a vested interest in better understanding the state of utilities' climate resilience in specific cities and areas. Insurance companies, for example: 
+ 
+"Insurance companies, tired of losing money, are raising rates, restricting coverage or pulling out of some areas altogether — making it more expensive for people to live in their homes. 'Risk has a price,' said Roy Wright, the former official in charge of insurance at the Federal Emergency Management Agency, and now head of the Insurance Institute for Business and Home Safety, a research group. 'We're just now seeing it.'”
+ 
+ 
+II. Resilience Defined 
+ 
+Definitions of resilience abound, but this one from Presidential Policy Directive–Critical Infrastructure Security and Resilience (PPD-21) seems particularly apt in specifically recommending proactive planning and action. Resilience is: 
+"The ability to prepare for and adapt to changing conditions and withstand and recover rapidly from disruptions. Resilience includes the ability to withstand and recover from deliberate attacks, accidents, or naturally occurring threats or incidents."  
+ 
+ 
+III. Valuing Resilience in a Physical Climate Risk Context 
+ 
+Estimates from the world's largest reinsurance companies vary, but suggest that for every $1 spent proactively on resilience measures, a city saves between $6 and $11 dollars in business interruptions and recovery costs.   When massive storms, floods, fires, freezes and other climate change-exacerbated fast onset and slow onset phenomena arrive, cities whose  providers of essential services have anticipated these events through the incorporation of forward-looking climate model data suffer fewer services disruptions and/or disruptions of lesser magnitudes or durations than those that didn't. Here's a concrete example: 
+ 
+"Two years after a water treatment plant in Greenville, North Carolina flooded in 1999's Hurricane Floyd, the Economic Development Administration gave the city $5 million to protect its facility with a new berm. When Hurricane Matthew struck in 2016, the water treatment plant survived and saved Greenville over $150 million—30 times as much as the cost to protect it."  
+Many parties express keen interest in better understanding the risks to government, industry and residents from the physical forces wrought by a rapidly changing climate. One of the most significant factors in determining how much damage or disruption occurs is the state of preparedness of proximate utilities and other critical services providers. Some prospective parties include: 
+ 
+-	Insurance and reinsurance companies 
+-	Credit ratings firms 
+-	Federal and State regulators 
+-	Emergency planners and first responders 
+-	Commercial and residential property developers and managers
+-	Companies, families, and individuals considering relocation 
+-	Community organizations and non-profits interested in supporting community resilience 
+ 
+And lastly, the energy, water, and other essential services providers themselves. Noting the interdependent relationships of all, the CRMM assesses the status of each of the following services entities: 
+ 
+-	Water and wastewater 
+-	Electricity 
+-	Communications 
+-	Natural gas 
+-	Transportation, and  
+-	Local government 
+ 
+ 
+IV. Maturity Models and Maturity Levels 
+ 
+Maturity models are a set of structured levels that describe how well the behaviors, practices and processes of an organization can reliably and sustainably produce required outcomes.  In the case of the CRMM, what's being measured is an organization's ability to address the challenges to reliable operations in a climate that's already producing increasingly difficult physical challenges and promises to get worse and worse over time.  
+ 
+Maturity levels help track the evolution of a capability that contributes to an overall organizational goal, where level 1 is associated with bare minimal capabilities and level 3 connotes a capability that's so well established, it's essentially become a core competency. Here's a quick take on what each level signifies: 
+ 
+3. Efficient - process management includes deliberate process optimization/improvement. 
+2. Defined - the process is defined/confirmed as a standard business process 
+1. Initial - the starting point for use of a new or undocumented repeat process. 
+0. No discernable process. 
+  
+
+V. Capability Categories
+ 
+Via interviews and review of publicly accessible documentation, six categories are examined and scored with 3 points awarded for the highest levels of maturity or in other words, application of widely agreed best practices. 
+
+ 
+
+Capability 1: Governance – Executive Level Engagement and Leadership
+3
+-	Risk committee appoints executive climate resilience lead and tracks physical climate mission risks, plans, and actions.  
+-	Depending on organizational and regulatory structure, the risk committee signs off or otherwise weights in on integrated resource plans (IRPs) and other plans to ensure climate risks are addressed adequately.  
+-	Physical climate risks, plans and actions are briefed to the CEO and Board of Directors (or equivalents) on a recurring basis 
+2
+-	Climate resilience lead has begun giving recurring status briefings to risk committee and others 
+1
+-	Entity has identified a resilience lead and has begun identifying physical climate risks
+0
+-	Ad hoc / no discernable process  
+
+
+
+The Resilience Value of Mature Physical Climate Risk Governance 
+ 
+Organizations can rarely act effectively on any critical task if they haven't allocated resources and built structures to affect those actions. In short, those that do identify and empower employees, including senior decision makers, to internally advocate for climate resilience policies, plans and actions will be better positioned to meet the challenges of extreme weather and other climate change-exacerbated risks than those that don't. These appointments also serve as important cultural signals that tend to foster company-wide awareness and alignment.
+ 
+Capability 2: Climate-Aware Planning
+3
+-	Recurring discussions are held with interdependent entities to monitor their climate resilience plans and policies.  
+-	Planned asset resilience actions are weighted by considering the impact if current or assets to-be-build were lost.  
+-	Climate resilience considerations inform a wide variety of enterprise planning processes, including long-term infrastructure, financial, maintenance, operational, restoration, business continuity, etc.
+-	Supply chain is analyzed from a climate risk perspective
+2
+-	Climate resilience lead has begun giving recurring status briefings to risk committee and others 
+1
+-	Entity has identified a resilience lead and has begun identifying physical climate risks
+0
+-	Ad hoc / no discernable process  
+
+
+The Resilience Value of Mature Physical Climate Risk-Aware Planning 
+ 
+Many organizations think of resilience as something that's demonstrated in the response, recovery and rebuilding actions taken after a damaging or disruptive event. In fact, after action reports very often point to a lack of planning and preparation as one of the primary causal factors heightening the degree of damage experienced.  These reports most often recommend improvements in planning and preparations be implemented as soon as possible.  
+ 
+
+ 
+
+ 
+Capability 3: Stakeholder and Community Collaboration
+Active stakeholder and community collaboration on physical climate risks are conducted on a recurring basis with:
+
+3
+-	Infrastructure Sharing and Analysis Centers (ISACs)  
+-	Insurance and credit ratings firms
+-	Trade groups
+-	Chambers of commerce, etc.
+2
+-	The proximate Public Utility Commission (PUC)
+1
+-	City and local government bodies
+0
+-	Ad hoc / no discernable process  
+ 
+ 
+
+The Resilience Value of Mature Stakeholder and Community Collaboration for Physical 
+Climate Risk 
+ 
+Climate resilience measures cannot be optimized on an island or in a vacuum. With competing priorities for which functions must be protected first and best, and resources always finite, coordination must be energetically pursued with all manner of stakeholders, beginning with those most local but expanding as quickly as possible to the rest listed here.  
+
+
+ 
+ 
+Capability 4: Resilience and Adaptation Actions
+3
+-	Initial hardening and/or adaptation actions are implemented and more are in the planning stage
+-	Tabletop exercises are conducted against projected worst-case climate projections with and without prioritized resilience and adaptation measures in place 
+2
+-	Vulnerability assessment results inform plans for resilience and adaption measures
+-	Cost-benefit / resilience-efficacy analyses of resilience and adaptations are being or have been reviewed by 3rd party Subject Matter Experts (SMEs)  
+1
+-	Initial climate vulnerability assessments on key assets are underway or have concluded 
+0
+-	Ad hoc / no discernable process  
+
+
+
+The Resilience Value of Mature Resilience and Adaption Actions for Physical Climate Risk 
+ 
+Planning the right way is one thing. Acting on those plans with time to spare is quite another. So it's best not to sit long on the insights an organization gets from climate models. From cost benefit analysis, to design, permitting, financing and more, hardening and/or relocating the assets that support critical functions is the works of years.  
+
+ 
+ 
+ 
+Capability 5: Customer Engagement and Coordination 
+
+3
+-	Regular interface sessions are held with government bodies, including where applicable, state, local, tribal and territorial F
+-	Feedback from all customer engagements above and below is incorporated in planning and prioritization processes
+2
+-	Recurring meetings are conducted with commercial and industrial customers, and not just the larger ones.  
+1
+-	Has begun conducting in person and virtual "town hall” style community briefings to better understand their concerns and priorities
+0
+-	Ad hoc / no discernable process  
+ 
+
+
+The Resilience Value of Mature Customer Engagement and Coordination for Physical 
+Climate Risk 
+ 
+As climate resilience scholar Mikhail Chester of Arizona State University has said, "infrastructure is conversation.” Prioritization based on consequences of inaction invariably produces winners and losers. Some interests will benefit from resilience investments, others will suffer especially when cost-benefit analyses produce decisions that include triage of certain assets which will affect local communities and businesses. It is therefore essential that customers and communities have a voice in the process so that resilience investment decisions are made with them, not just about them. 
+
+ 
+
+
+Capability 6: Attention to Equity
+
+3
+-	Economically challenged communities are actively engaged in resilience and adaptation planning processes
+2
+-	Economically challenged communities are prioritized in the allocation of resilience measures
+1
+-	Economically challenged communities are not neglected in the allocation of resilience measures
+0
+-	Ad hoc / no discernable process  
+ 
+
+
+The Resilience Value of Mature Equity Policies in the Context of Physical Climate Risks 
+ 
+Marginalized, economically disadvantaged communities, often comprised of persons of color and recent immigrants, have been treated as lesser citizens not worthy of the same quality of life city planners and other decision makers have afforded the more affluent. The CRMM encourages utilities to give extra weighting to the interests of these communities, not to advantage them over others, but simply to bring them closer to a parity which they assuredly deserve. 
