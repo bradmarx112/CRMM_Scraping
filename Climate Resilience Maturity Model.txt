@@ -81,11 +81,13 @@ Capability 1: Governance – Executive Level Engagement and Leadership
 -	Ad hoc / no discernable process  
 
 
-
 The Resilience Value of Mature Physical Climate Risk Governance 
  
 Organizations can rarely act effectively on any critical task if they haven't allocated resources and built structures to affect those actions. In short, those that do identify and empower employees, including senior decision makers, to internally advocate for climate resilience policies, plans and actions will be better positioned to meet the challenges of extreme weather and other climate change-exacerbated risks than those that don't. These appointments also serve as important cultural signals that tend to foster company-wide awareness and alignment.
- 
+
+
+
+
 Capability 2: Climate-Aware Planning
 3
 -	Recurring discussions are held with interdependent entities to monitor their climate resilience plans and policies.  
@@ -107,7 +109,6 @@ Many organizations think of resilience as something that's demonstrated in the r
 
  
 
- 
 Capability 3: Stakeholder and Community Collaboration
 Active stakeholder and community collaboration on physical climate risks are conducted on a recurring basis with:
 
@@ -123,10 +124,8 @@ Active stakeholder and community collaboration on physical climate risks are con
 0
 -	Ad hoc / no discernable process  
  
- 
 
-The Resilience Value of Mature Stakeholder and Community Collaboration for Physical 
-Climate Risk 
+The Resilience Value of Mature Stakeholder and Community Collaboration for Physical Climate Risk 
  
 Climate resilience measures cannot be optimized on an island or in a vacuum. With competing priorities for which functions must be protected first and best, and resources always finite, coordination must be energetically pursued with all manner of stakeholders, beginning with those most local but expanding as quickly as possible to the rest listed here.  
 
@@ -144,7 +143,6 @@ Capability 4: Resilience and Adaptation Actions
 -	Initial climate vulnerability assessments on key assets are underway or have concluded 
 0
 -	Ad hoc / no discernable process  
-
 
 
 The Resilience Value of Mature Resilience and Adaption Actions for Physical Climate Risk 
@@ -167,9 +165,7 @@ Capability 5: Customer Engagement and Coordination
 -	Ad hoc / no discernable process  
  
 
-
-The Resilience Value of Mature Customer Engagement and Coordination for Physical 
-Climate Risk 
+The Resilience Value of Mature Customer Engagement and Coordination for Physical Climate Risk 
  
 As climate resilience scholar Mikhail Chester of Arizona State University has said, "infrastructure is conversation.” Prioritization based on consequences of inaction invariably produces winners and losers. Some interests will benefit from resilience investments, others will suffer especially when cost-benefit analyses produce decisions that include triage of certain assets which will affect local communities and businesses. It is therefore essential that customers and communities have a voice in the process so that resilience investment decisions are made with them, not just about them. 
 
@@ -187,7 +183,6 @@ Capability 6: Attention to Equity
 0
 -	Ad hoc / no discernable process  
  
-
 
 The Resilience Value of Mature Equity Policies in the Context of Physical Climate Risks 
  
