@@ -1,0 +1,67 @@
+Climate Resilience Maturity Model (CRMM) for Essential Services Providers
+
+
+Executive Summary
+
+
+All US cities are in some stage of awareness and action related to hardening their infrastructure assets and adapting their critical functions and processes to operate reliably in the more challenging conditions wrought by a changing climate. This model offers a mechanism for entities to baseline their present state and set goals for heightened resilience in the near-midterm future. When aggregated across the six sectors assessed, a city’s resilience posture is made visible to all manner of interested stakeholders. Also please note:
+
+
+* Criteria and annual ratings are publicly accessible, though particularly sensitive data may be reserved for USG use.
+* This model is fundamentally multi-sector and is designed to take cross-sector interdependencies into full account (e.g., energy, water, communications, transportation, etc.).
+* Intended to motivate accelerated action, numeric or letter grades for each service provider type are rolled up into a city score.
+* Several large US energy and water utilities have lauded earlier CRMM versions in formal proceedings, and UN personnel have recently inquired whether this model could be applied at regional or national levels. 
+
+
+I. Introduction
+
+Depending on geography, disruptive and destructive physical forces stemming from or exacerbated by a changing climate are already landing on infrastructures. While decarbonization is the watchword in climate mitigation, utilities, as stewards of our most critical infrastructures, must be proactive in their preparation for present and coming hazards of a kind and/or intensity they’ve not yet experienced, but which are projected by climate models. No infrastructure organizations function in a vacuum, so electric, natural gas, communications, transportation, and water and wastewater organizations must update their planning processes and reach out to regulators, stakeholders, and the communities they serve if they are to meet these enormous challenges.  
+
+And very many organizations and individuals have a stake in understanding whether the utilities serving particular cities or regions are updating their plans and processes ahead of the arrival of material physical climate impacts, or else move more slowly either unaware of the risks, or hoping that nothing too catastrophic will happen on their watch.  Some are in motion and serve as early models for best practices, so the intent of this CRMM is to help guide utilities towards higher levels of maturity in this still relatively young field. In addition, it will help generate a source of comparative data for those with a vested interest in better understanding the state of utilities’ climate resilience in specific cities and areas. 
+
+
+II. Resilience Defined
+ 
+Resilience is: 
+
+The ability to prepare for and adapt to changing conditions and withstand and recover rapidly from disruptions. Resilience includes the ability to withstand and recover from deliberate attacks, accidents, or naturally occurring threats or incidents.
+
+
+III. Valuing Resilience in a Physical Climate Risk Context
+ 
+Many parties express keen interest in better understanding the risks to government, industry and residents from the physical forces wrought by a rapidly changing climate. One of the most significant factors in determining how much damage or disruption occurs is the state of preparedness of proximate utilities and other critical services providers. Some prospective parties include: 
+ 
+* Insurance and reinsurance companies 
+* Credit ratings firms 
+* Federal and State regulators 
+* Emergency planners and first responders 
+* Commercial and residential property developers and managers
+* Companies, families, and individuals considering relocation 
+* Community organizations and non-profits interested in supporting community resilience 
+ 
+And lastly, the energy, water, and other essential services providers themselves. Noting the interdependent relationships of all, the CRMM assesses the status of each of the following services entities: 
+ 
+* Water and wastewater 
+* Electricity 
+* Communications 
+* Natural gas 
+* Transportation, and  
+* State and local government 
+
+
+IV. Maturity Models and Maturity Levels 
+ 
+Maturity models are a set of structured levels that describe how well the behaviors, practices and processes of an organization can reliably and sustainably produce required outcomes. In the case of the CRMM, what’s being measured is an organization’s ability to address the challenges to reliable operations in a climate that’s already producing increasingly difficult physical challenges and promises to get worse and worse over time.  
+ 
+Maturity levels help track the evolution of a capability that contributes to an overall organizational goal, where level 1 is associated with bare minimal capabilities and level 3 connotes a capability that’s so well established, it’s essentially become a core competency. Here’s a quick take on what each level signifies: 
+ 
+3. Mature - process management includes deliberate process optimization/improvement. 
+2. Improving - the process is defined/confirmed as a standard business process. 
+1. Initial - the starting point for use of a new or undocumented repeat process. 
+0. No discernable process. 
+  
+
+
+V. Capability Categories
+ 
+Via interviews and review of publicly accessible documentation, five categories are examined and scored with 3 points awarded for the highest levels of maturity or in other words, application of widely agreed best practices. 

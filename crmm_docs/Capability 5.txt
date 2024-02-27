@@ -1,0 +1,18 @@
+Capability 5: Customer Engagement and Coordination 
+
+
+	3
+	* Regular interface sessions are held with government bodies, including where applicable: state, local, tribal and territorial. 
+	* Feedback from all customer engagements above and below is incorporated in planning and prioritization processes.
+	* Economically challenged communities are actively engaged in resilience and adaptation planning processes.
+	2
+	* Recurring meetings are conducted with commercial and industrial customers.
+	* Economically challenged communities are prioritized in the allocation of resilience measures.
+	1
+	* Has begun conducting in-person or virtual “town hall” style community briefings to better understand their concerns and priorities.
+	0
+	* Ad hoc / no discernable process  
+	
+
+Capability 5 explanation: 
+Prioritization based on consequences of inaction invariably produces winners and losers. Some interests will benefit from resilience investments, others will suffer especially when cost-benefit analyses produce decisions that include triage of certain assets which will affect local communities and businesses. It is therefore essential that customers and communities have a voice in the process so that resilience investment decisions are made with them, not just about them. 

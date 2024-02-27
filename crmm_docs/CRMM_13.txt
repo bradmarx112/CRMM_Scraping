@@ -24,7 +24,7 @@ II. Resilience Defined
  
 Resilience is: 
 
-“The ability to prepare for and adapt to changing conditions and withstand and recover rapidly from disruptions. Resilience includes the ability to withstand and recover from deliberate attacks, accidents, or naturally occurring threats or incidents.”
+The ability to prepare for and adapt to changing conditions and withstand and recover rapidly from disruptions. Resilience includes the ability to withstand and recover from deliberate attacks, accidents, or naturally occurring threats or incidents.
 
 
 III. Valuing Resilience in a Physical Climate Risk Context
