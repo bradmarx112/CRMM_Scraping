@@ -1,19 +1,19 @@
 Capability 3: Stakeholder and Community Collaboration
 	
-	3
+	Level 3:
 	* In addition to Level 2, Active stakeholder and community collaboration on physical climate risks are conducted on a recurring basis with:
    	* Infrastructure Sharing and Analysis Centers
    	* Trade groups 
    	* Chambers of commerce, etc.
-	2
+	Level 2:
 	* In addition to Level 1, Active stakeholder and community collaboration on physical climate risks are conducted on a recurring basis with:
    	* The proximate Public Utility Commission (PUC)
    	* Insurance and credit ratings firms 
-	1
+	Level 1:
 	* Active stakeholder and community collaboration on physical climate risks are conducted on a recurring basis with City and state government bodies
-	0
+	Level 0:
 	* Ad hoc / no discernable process  
-	
+
 
 Capability 3 explanation:
 Climate resilience measures cannot be optimized on an island or in a vacuum. With competing priorities for which functions must be protected first and best, and resources always finite, coordination must be energetically pursued with all manner of stakeholders, beginning with those most local but expanding as quickly as possible to the rest listed here.  

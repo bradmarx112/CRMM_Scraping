@@ -1,18 +1,6 @@
 Climate Resilience Maturity Model (CRMM) for Essential Services Providers
 
 
-Executive Summary
-
-
-All US cities are in some stage of awareness and action related to hardening their infrastructure assets and adapting their critical functions and processes to operate reliably in the more challenging conditions wrought by a changing climate. This model offers a mechanism for entities to baseline their present state and set goals for heightened resilience in the near-midterm future. When aggregated across the six sectors assessed, a city’s resilience posture is made visible to all manner of interested stakeholders. Also please note:
-
-
-* Criteria and annual ratings are publicly accessible, though particularly sensitive data may be reserved for USG use.
-* This model is fundamentally multi-sector and is designed to take cross-sector interdependencies into full account (e.g., energy, water, communications, transportation, etc.).
-* Intended to motivate accelerated action, numeric or letter grades for each service provider type are rolled up into a city score.
-* Several large US energy and water utilities have lauded earlier CRMM versions in formal proceedings, and UN personnel have recently inquired whether this model could be applied at regional or national levels. 
-
-
 I. Introduction
 
 Depending on geography, disruptive and destructive physical forces stemming from or exacerbated by a changing climate are already landing on infrastructures. While decarbonization is the watchword in climate mitigation, utilities, as stewards of our most critical infrastructures, must be proactive in their preparation for present and coming hazards of a kind and/or intensity they’ve not yet experienced, but which are projected by climate models. No infrastructure organizations function in a vacuum, so electric, natural gas, communications, transportation, and water and wastewater organizations must update their planning processes and reach out to regulators, stakeholders, and the communities they serve if they are to meet these enormous challenges.  
@@ -59,9 +47,3 @@ Maturity levels help track the evolution of a capability that contributes to an 
 2. Improving - the process is defined/confirmed as a standard business process. 
 1. Initial - the starting point for use of a new or undocumented repeat process. 
 0. No discernable process. 
-  
-
-
-V. Capability Categories
- 
-Via interviews and review of publicly accessible documentation, five categories are examined and scored with 3 points awarded for the highest levels of maturity or in other words, application of widely agreed best practices. 
