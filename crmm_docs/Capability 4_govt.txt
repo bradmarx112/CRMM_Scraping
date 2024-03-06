@@ -4,6 +4,7 @@ Capability 4: Resilience and Adaptation Actions
 	* Initial hardening and/or adaptation actions have been implemented and more are in the planning stage
 	* Tabletop exercises are conducted against projected worst-case climate projections with and without prioritized resilience and adaptation measures in place 
 	* Cost-benefit / resilience-efficacy analyses of resilience and adaptations are being or have been reviewed by 3rd party Subject Matter Experts (SMEs)
+	* In an extreme heat event context, especially for government, but often with support of essential services providers, public health measures like well-provisioned cooling centers and additional hospital preparedness measures indicate a higher level of maturity
 	Level 2:
 	* Vulnerability assessment results inform plans for resilience and adaption measures
 	* Entity has studied the measures other organizations in the same sector and roughly the same region have taken to improve their resilience postures.
