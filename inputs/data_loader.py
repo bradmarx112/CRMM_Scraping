@@ -1,8 +1,10 @@
 from utils.config import acrru_config
+from inputs.input import ResearchInput, SummaryInput
 from abc import ABC, abstractmethod
+from typing import List
 
 
-class ACRRUInput(ABC):
+class ACRRULoader(ABC):
     def __init__(self, crmm_path: str, crmm_file: str, entities):
         
         self.crmm = self._read_crmm(crmm_path, crmm_file)
@@ -37,23 +39,26 @@ class ACRRUInput(ABC):
     @abstractmethod
     def construct_input(self, entities: list):
         ...
-    
 
-class ResearchInput(ACRRUInput):
+
+class ResearchLoader(ACRRULoader):
     def __init__(self, capability_files: dict, crmm_path: str, crmm_file: str, entities):
         self.capability_dict = self._read_capabilities(crmm_path, capability_files)
-        super(ResearchInput, self).__init__(crmm_path, crmm_file, entities)
+        self.task = 'Research'
+        super(ResearchLoader, self).__init__(crmm_path, crmm_file, entities)
 
-    def construct_input(self, entities: list) -> list:
-        # Input as list of dicts: each list element is dict of dicts for each capability
+    def construct_input(self, entities: list) -> List[ResearchInput]:
+        # Input as list of ResearchInput Dataclasses: each list element is input object for each capability
+        # Input length = num. entities * num. capabilities
         input_list = []
         for entity in entities:
-            input_list.append({capability: {
+            input_list.extend(
+                ResearchInput(**{
                 'crmm_info': self.crmm, 
                 'org_name': entity,
-                'cap_info': cap_desc} 
+                'cap_info': cap_desc})
             for capability, cap_desc in self.capability_dict.items()
-            })
+            )
 
         return input_list
 
@@ -69,20 +74,23 @@ class ResearchInput(ACRRUInput):
         return cap_dict
 
 
-class SummaryInput(ACRRUInput):
+class SummaryLoader(ACRRULoader):
     def __init__(self, agg_lvl: str, **kwargs):
         self.agg_lvl = agg_lvl
-        super(SummaryInput, self).__init__(**kwargs)
+        self.task = self.agg_lvl.capitalize() + ' Summary'
+        super(SummaryLoader, self).__init__(**kwargs)
 
-    def construct_input(self, entities: dict) -> list:
-        # Input as list of dicts: each list element is dict of inputs for agent executor run
+    def construct_input(self, entities: dict) -> List[SummaryInput]:
+        # Input as list of SummaryInput Dataclasses: each list element is input object for agent executor run
         input_list = []
         for entity_name, reports in entities.items():
-            input_list.append({
+            input_list.append(
+                SummaryInput(**{
                 'crmm_info': self.crmm,
                 'agg_lvl': self.agg_lvl,
                 'org_name': entity_name,
                 'summaries': self._collect_reports(reports)})
+                )
 
         return input_list
 

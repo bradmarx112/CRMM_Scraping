@@ -5,7 +5,7 @@ import time
 import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '../..'))
 
-from inputs.input_manager import ResearchInput, SummaryInput
+from inputs.data_loader import ResearchLoader, SummaryLoader
 
 class TestACRRUInput(unittest.TestCase):
     def setUp(self):
@@ -18,34 +18,35 @@ class TestACRRUInput(unittest.TestCase):
                             "Capability 4": "Capability 4: Resilience and Adaptation Actions",
                             "Capability 5": "Capability 5: Customer Engagement and Coordination"}
         
-    def test_research_input(self):
+    def test_research_loader(self):
         
-        research_input = ResearchInput(capability_files=self.capability_files, crmm_path=self.crmm_path, crmm_file=self.crmm_file, entities=self.entities)
+        research_loader = ResearchLoader(capability_files=self.capability_files, crmm_path=self.crmm_path, crmm_file=self.crmm_file, entities=self.entities)
 
         # Check if research_input is iterable
-        self.assertTrue(iter(research_input))
+        self.assertTrue(iter(research_loader))
 
         # Test indexing
-        self.assertEqual(research_input[0]['Capability 1']['org_name'], 'entity1')
-        self.assertEqual(research_input[1]['Capability 2']['org_name'], 'entity2')
+        self.assertEqual(research_loader[0].org_name, 'entity1')
+        self.assertEqual(research_loader[1].org_name, 'entity1')
+        self.assertEqual(research_loader[5].org_name, 'entity2')
 
-    def test_summary_input(self):
+    def test_summary_loader(self):
         agg_lvl = 'provider'
-        summary_input = SummaryInput(agg_lvl=agg_lvl, crmm_path=self.crmm_path, crmm_file=self.crmm_file, entities={'entity1': {'domain1': 'report1'}, 'entity2': {'domain2': 'report2'}})
+        summary_loader = SummaryLoader(agg_lvl=agg_lvl, crmm_path=self.crmm_path, crmm_file=self.crmm_file, entities={'entity1': {'domain1': 'report1'}, 'entity2': {'domain2': 'report2'}})
 
         # Check if summary_input is iterable
-        self.assertTrue(iter(summary_input))
+        self.assertTrue(iter(summary_loader))
 
         # Test indexing
-        self.assertEqual(summary_input[0]['org_name'], 'entity1')
-        self.assertEqual(summary_input[1]['org_name'], 'entity2')
+        self.assertEqual(summary_loader[0].org_name, 'entity1')
+        self.assertEqual(summary_loader[1].org_name, 'entity2')
 
     def test_invalid_index(self):
-        research_input = ResearchInput(capability_files=self.capability_files, crmm_path=self.crmm_path, crmm_file=self.crmm_file, entities=self.entities)
+        research_loader = ResearchLoader(capability_files=self.capability_files, crmm_path=self.crmm_path, crmm_file=self.crmm_file, entities=self.entities)
 
         # Test accessing out of bounds index
         with self.assertRaises(IndexError):
-            research_input[len(research_input)]
+            research_loader[len(research_loader)]
 
 if __name__ == '__main__':
     unittest.main()
