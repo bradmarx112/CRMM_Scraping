@@ -35,5 +35,8 @@
         "filename": "ACRRU Output Logs",
         "tabname": 0
         }
-    }
+    },
+
+    "tools": {"tavily": {"max_results": 10},
+              "brave": {"count": 4}}
 }

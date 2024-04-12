@@ -63,8 +63,3 @@ def construct_react_prompt(sys_prompt: dict, human_prompt: dict) -> ChatPromptTe
     ])
 
     return acrru_chat_react_prompt
-
-
-# Define dictionary that holds prompt generation function to use based on user-chosen LLM. 
-llm_prompt_func_mapping = {'openai': construct_openai_prompt,
-                           'react': construct_react_prompt}
