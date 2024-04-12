@@ -1,7 +1,7 @@
 from typing import Optional, Type, Union
 from abc import ABC
-from inputs.input import ACRRUInput, ResearchInput, SummaryInput
-from inputs.data_loader import ACRRULoader
+from data_management.structure.input import ACRRUInput, ResearchInput, SummaryInput
+from data_management.structure.data_loader import ACRRULoader
 
 from utils.logging.google_sheets_agent import GoogleSheetsLoggingAgent
 from utils.config import acrru_config

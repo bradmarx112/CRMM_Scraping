@@ -5,7 +5,7 @@ from ACRRU.executor.accru_executor import ACRRUExecutor
 from utils.planning.aggregation_planner import ExecutionPlanner
 from utils.config import acrru_config
 
-from inputs.data_loader import ACRRULoader, ResearchLoader, SummaryLoader
+from data_management.data_loader import ACRRULoader, ResearchLoader, SummaryLoader
 
 RESEARCH_FLAG = acrru_config['hierarchy'][0]
 
@@ -47,7 +47,6 @@ class ACRRU:
         
         # Perform summary step(s) if necessary
         if run_step:
-
             acrru_output = self.summarize(loader, planner, notes, save_results)
 
         return acrru_output

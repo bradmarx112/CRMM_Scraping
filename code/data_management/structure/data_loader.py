@@ -1,5 +1,5 @@
 from utils.config import acrru_config
-from inputs.input import ResearchInput, SummaryInput
+from data_management.input.structure import ResearchInput, SummaryInput
 from abc import ABC, abstractmethod
 from typing import List
 
