@@ -5,8 +5,9 @@ from typing import List
 
 
 class ACRRULoader(ABC):
-    def __init__(self, crmm_path: str, crmm_file: str, entities):
+    def __init__(self, task, crmm_path: str, crmm_file: str, entities):
         
+        self.task = task
         self.crmm = self._read_crmm(crmm_path, crmm_file)
         self.data = self.construct_input(entities)
         self.index = 0
@@ -44,7 +45,6 @@ class ACRRULoader(ABC):
 class ResearchLoader(ACRRULoader):
     def __init__(self, capability_files: dict, crmm_path: str, crmm_file: str, entities):
         self.capability_dict = self._read_capabilities(crmm_path, capability_files)
-        self.task = 'Research'
         super(ResearchLoader, self).__init__(crmm_path, crmm_file, entities)
 
     def construct_input(self, entities: list) -> List[ResearchInput]:
@@ -75,31 +75,30 @@ class ResearchLoader(ACRRULoader):
 
 
 class SummaryLoader(ACRRULoader):
-    def __init__(self, agg_lvl: str, **kwargs):
-        self.agg_lvl = agg_lvl
-        self.task = self.agg_lvl.capitalize() + ' Summary'
+    def __init__(self, **kwargs):
         super(SummaryLoader, self).__init__(**kwargs)
+        self.task = task.capitalize() + ' Summary'
 
     def construct_input(self, entities: dict) -> List[SummaryInput]:
         # Input as list of SummaryInput Dataclasses: each list element is input object for agent executor run
         input_list = []
-        for entity_name, reports in entities.items():
+        for entity_name, data in entities.items():
             input_list.append(
                 SummaryInput(**{
                 'crmm_info': self.crmm,
                 'agg_lvl': self.agg_lvl,
                 'org_name': entity_name,
-                'summaries': self._collect_reports(reports)})
+                'summaries': self._collect_reports(data)})
                 )
 
         return input_list
 
     @staticmethod
     def _collect_reports(reports: dict) -> str:
-        # Report dict structure: {[granular domain of report]: [text of report itself]}
+        # Report dict structure: {[granular domain of report]: [Agent output of prev granularity]}
         report_val_list = []
         for domain, report in reports.items():
-            report_section = domain + '\n' + report
+            report_section = domain + '\n' + report['output']
             report_val_list.append(report_section)
 
         fmt_rpt = '\n\n\n'.join(report_val_list)

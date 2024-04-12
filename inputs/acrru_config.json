@@ -2,6 +2,8 @@
     "verbose": true,
     "return_intermediate_steps": true,
     "crmm_doc_path": "crmm_docs",
+    "research_flag": "research",
+    "hierarchy": ["research", "capability", "provider", "region", "end"],
 
     "prompts": {
         "sys_msgs": {
