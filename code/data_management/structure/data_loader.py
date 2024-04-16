@@ -1,5 +1,5 @@
 from utils.config import acrru_config
-from data_management.structure.input import ResearchInput, SummaryInput
+from data_management.structure.input import ResearchInput, SummaryInput, Entity
 from abc import ABC, abstractmethod
 from typing import List
 
@@ -43,21 +43,21 @@ class ACRRULoader(ABC):
 
 
 class ResearchLoader(ACRRULoader):
-    def __init__(self, capability_files: dict, crmm_path: str, crmm_file: str, entities: dict):
+    def __init__(self, capability_files: dict, crmm_path: str, crmm_file: str, entities: list):
         self.capability_dict = self._read_capabilities(crmm_path, capability_files)
         super(ResearchLoader, self).__init__('research', crmm_path, crmm_file, entities)
 
-    def construct_input(self, entities: dict) -> List[ResearchInput]:
+    def construct_input(self, entities: list) -> List[ResearchInput]:
         # Input as list of ResearchInput Dataclasses: each list element is input object for each capability
         # Input length = num. entities * num. capabilities
         input_list = []
-        for entity in entities.keys():
-            input_list.extend(
+        for entity in entities:
+            input_list.extend([
                 ResearchInput(**{
                 'crmm_info': self.crmm, 
-                'org_name': entity,
+                'entity': Entity(name=capability, parent=entity), # define new capability level in entity hierarchy
                 'cap_info': cap_desc})
-            for capability, cap_desc in self.capability_dict.items()
+            for capability, cap_desc in self.capability_dict.items()]
             )
 
         return input_list
@@ -77,17 +77,17 @@ class ResearchLoader(ACRRULoader):
 class SummaryLoader(ACRRULoader):
     def __init__(self, **kwargs):
         super(SummaryLoader, self).__init__(**kwargs)
-        self.task = task.capitalize() + ' Summary'
+        self.task = self.task.capitalize() + ' Summary'
 
     def construct_input(self, entities: dict) -> List[SummaryInput]:
         # Input as list of SummaryInput Dataclasses: each list element is input object for agent executor run
         input_list = []
-        for entity_name, data in entities.items():
+        for entity, data in entities.items():
             input_list.append(
                 SummaryInput(**{
                 'crmm_info': self.crmm,
-                'agg_lvl': self.agg_lvl,
-                'org_name': entity_name,
+                'agg_lvl': self.task,
+                'entity': entity,
                 'summaries': self._collect_reports(data)})
                 )
 
@@ -97,10 +97,11 @@ class SummaryLoader(ACRRULoader):
     def _collect_reports(reports: dict) -> str:
         # Report dict structure: {[granular domain of report]: [Agent output of prev granularity]}
         report_val_list = []
-        for domain, report in reports.items():
-            report_section = domain + '\n' + report['output']
+        for report_dict in reports:
+            report_section = report_dict['topic'] + '\n' + report_dict['output']
             report_val_list.append(report_section)
 
         fmt_rpt = '\n\n\n'.join(report_val_list)
 
         return fmt_rpt
+

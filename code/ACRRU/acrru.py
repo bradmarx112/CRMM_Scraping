@@ -35,11 +35,10 @@ class ACRRU:
         if run_step == RESEARCH_FLAG:
             acrru_output = self.research(loader, notes, save_results)
             
-            # This will be None if there are no summary tasks
-            run_step = planner.get_next_step()
-
             # Build loader from research results for downstream summary tasks
             if not planner.completed:
+                # This will be None if there are no summary tasks
+                run_step = planner.get_next_step()
                 loader = SummaryLoader(task=run_step,
                                        crmm_path=self.crmm_path,
                                        crmm_file=self.crmm_file,
@@ -71,14 +70,13 @@ class ACRRU:
             if save_results:
                 pass
 
-            run_step = planner.get_next_step()
-
-            if run_step:
+            if not planner.completed:
+                run_step = planner.get_next_step()
                 # Any additional step after the first MUST be a summary task.
                 loader = SummaryLoader(task=run_step,
                                        crmm_path=self.crmm_path,
                                        crmm_file=self.crmm_file,
-                                       entities=acrru_output)
+                                       entities=summary_output)
             else:
                 break
         
@@ -95,7 +93,6 @@ class ACRRU:
 
         return research_output
 
-
     def _run(self, loader: ACRRULoader, notes: str) -> dict:
         """
         Runs the ACRRU executor over all provided data for one pass.
@@ -105,7 +102,8 @@ class ACRRU:
 
         for model_input in loader:
             output = self.executor.execute(model_input, task=loader.task, notes=notes)
-            output_dict[model_input.org_name].append(output)
+            output['topic'] = model_input.entity.name
+            output_dict[model_input.entity.get_parent()].append(output)
 
         return output_dict
 

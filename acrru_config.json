@@ -12,10 +12,10 @@
                             "input_variables": ["crmm_info", "agg_lvl"]}
         },
         "human_msgs": {
-            "hmn_research": {"template": "Summarize how the infrastructure and initiatives of the organization, {org_name} are positioned with respect to the following capability in the Climate Resilience Maturity Model:\n ####\n{cap_info}\n####\nAnswer using the following format:\n####\n## Level 1\nSummary: [summary of level 1]\nEvidence: [All links referenced in level 1 summary]\n## Level 2\nSummary: [summary of level 2]\nEvidence: [all links referenced in level 2 summary]\n## Level 3\nSummary: [summary of level 3]\nEvidence: [all links referenced in level 3 summary]\nDirectly mention how each summary relates to the corresponding level criteria. All evidence MUST be related to climate resiliency in some way. Use as many different relevant sources as possible to gauge their overall position. \n Do not include an introduction or conclusion in your response. \nDo not consider the following topics when collecting evidence:\n -greenhouse gas emissions \n -energy saving and efficiency \n -decarbonization \n -clean energy",
-                            "input_variables": ["org_name", "cap_info"]},
-            "hmn_summary": {"template": "Create a report of the evidence related to the maturity level of {org_name} provided by the following summaries:\n######\n{summaries}\n#####\nProvide one report per capability. If you perform additional research, list the new links you are referencing. Do NOT provide a maturity score. All evidence MUST be related to climate resiliency in some way. Use as many different relevant sources as possible to gauge their overall position.\n Do not include an introduction or conclusion in your response.",
-                            "input_variables": ["org_name", "summaries"]}
+            "hmn_research": {"template": "Summarize how the infrastructure and initiatives of the organization, {entity} are positioned with respect to the following capability in the Climate Resilience Maturity Model:\n ####\n{cap_info}\n####\nAnswer using the following format:\n####\n## Level 1\nSummary: [summary of level 1]\nEvidence: [All links referenced in level 1 summary]\n## Level 2\nSummary: [summary of level 2]\nEvidence: [all links referenced in level 2 summary]\n## Level 3\nSummary: [summary of level 3]\nEvidence: [all links referenced in level 3 summary]\nDirectly mention how each summary relates to the corresponding level criteria. All evidence MUST be related to climate resiliency in some way. Use as many different relevant sources as possible to gauge their overall position. \n Do not include an introduction or conclusion in your response. \nDo not consider the following topics when collecting evidence:\n -greenhouse gas emissions \n -energy saving and efficiency \n -decarbonization \n -clean energy",
+                            "input_variables": ["entity", "cap_info"]},
+            "hmn_summary": {"template": "Create a report of the evidence related to the maturity level of {entity} provided by the following summaries:\n######\n{summaries}\n#####\nProvide one report per capability. If you perform additional research, list the new links you are referencing. Do NOT provide a maturity score. All evidence MUST be related to climate resiliency in some way. Use as many different relevant sources as possible to gauge their overall position.\n Do not include an introduction or conclusion in your response.",
+                            "input_variables": ["entity", "summaries"]}
         }
     },
     
@@ -36,7 +36,7 @@
         }
     },
 
-    "tools": {"tavily": {"max_results": 2},
+    "tools": {"tavily": {"max_results": 1},
               "brave": {"count": 2}}    
     
 }

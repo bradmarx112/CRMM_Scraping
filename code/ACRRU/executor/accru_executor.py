@@ -31,8 +31,8 @@ class ACRRUExecutor:
         self.agent_executor = self.agent_executor_dict[mode]
 
     @retry_with_exponential_backoff
-    def invoke(self, **kwargs):
-        return self.agent_executor.invoke(**kwargs)
+    def invoke(self, *args, **kwargs):
+        return self.agent_executor.invoke(*args, **kwargs)
 
     def execute(self, input_args: ACRRUInput, task: str, notes: str) -> dict:
         args = input_args.construct_input()

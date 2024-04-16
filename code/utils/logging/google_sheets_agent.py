@@ -43,5 +43,5 @@ class GoogleSheetsLoggingAgent:
         prompt = '\n'.join([f'{input_value.content}' for input_value in agent.runnable.steps[1].format_messages(**test_input_dict, agent_scratchpad=['']) if input_value.__class__.__name__ == 'HumanMessage'])
 
         # Return a list of everything!
-        return [cur_time, test_input_dict['org_name'], task, notes, 
+        return [cur_time, test_input_dict['entity'], task, notes, 
             template, prompt, int_steps, agent_output['output']]

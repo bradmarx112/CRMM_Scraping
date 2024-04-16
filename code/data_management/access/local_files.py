@@ -3,7 +3,7 @@ import pandas as pd
 from utils.config import acrru_config
 
 from data_management.structure.data_loader import ResearchLoader, SummaryLoader, ACRRULoader
-
+from data_management.structure.input import Entity
 
 def compile_electricity_providers(entity_path: str, coverage_path: str) -> pd.DataFrame:
     # Get list of electricity providers
@@ -37,17 +37,19 @@ def create_loader_from_local(model_file_name: str,
     '''
     
     # TODO: add logic for locally saved summary data
-    entity_dict = {}
+    entity_list = []
     if research_requested:
         target_file_name = 'research' 
         with open(f'.\\{local_data_folder}\\{target_file_name}_entities.txt', 'r') as f:
             for line in f:
-                entity_dict[line] = None
+                extracted_depenencies = line.split('|')
+                entity = Entity.from_dependency_chain(dependency_chain=extracted_depenencies)
+                entity_list.append(entity)
         
         loader = ResearchLoader(capability_files=acrru_config['capabilities'], 
                                 crmm_path=acrru_config['crmm_doc_path'],
                                 crmm_file=model_file_name,
-                                entities=entity_dict)
+                                entities=entity_list)
     else:
         target_file_name = 'summary'
 
