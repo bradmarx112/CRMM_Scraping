@@ -15,11 +15,11 @@ class ACRRUExecutor:
 
         # Define executor dictionary that can be toggled in the get_mode method for either ACRRU task.
         self.agent_executor_dict = {'research': AgentExecutor(
-                                                agent=self.research_agent, tools=tools, verbose=verbose, 
+                                                agent=research_agent, tools=tools, verbose=verbose, 
                                                 return_intermediate_steps=return_intermediate_steps),
 
                                     'summary': AgentExecutor(
-                                                agent=self.summary_agent, tools=tools, verbose=verbose, 
+                                                agent=summary_agent, tools=tools, verbose=verbose, 
                                                 return_intermediate_steps=return_intermediate_steps)}
         self.logger = logger
         self.agent_executor = None
@@ -29,11 +29,11 @@ class ACRRUExecutor:
 
         self.agent_executor = self.agent_executor_dict[mode]
 
-    def execute(self, input_args: ACRRUInput, mode: str, task: str, notes: str) -> dict:
+    def execute(self, input_args: ACRRUInput, task: str, notes: str) -> dict:
         args = input_args.construct_input()
         output = self.agent_executor.invoke(args)
 
         if self.logger:
-            self.logger.log_response(self.agent, output, args, task, notes)
+            self.logger.log_response(self.agent_executor.agent, output, args, task, notes)
 
         return output

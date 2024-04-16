@@ -27,5 +27,5 @@ def construct_react_agent(tools: list, llm_name: str, llm_temp: float,
 
 
 # Define dictionary that holds agent generation function to use based on user choice. 
-llm_prompt_func_mapping = {'openai': construct_openai_agent,
+llm_agent_func_mapping = {'openai': construct_openai_agent,
                            'react': construct_react_agent}

@@ -6,7 +6,7 @@ class ConfigLoader:
     """
     ACRRU Config class for compiling all input data/parameters into dictionary for downstream use.
     """
-    def __init__(self, json_file_path="inputs/acrru_config.json"):
+    def __init__(self, json_file_path="./acrru_config.json"):
         self.json_file_path = json_file_path
         self.config = {}
 

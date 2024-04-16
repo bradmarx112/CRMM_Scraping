@@ -21,19 +21,19 @@ class ExecutionPlanner:
 
     def _construct_dependency_stack(self, initial_step, end_step) -> list:
         # Make sure start gran is a dependency of target gran.
-        if summary_hierarchy[initial_step] >= summary_hierarchy[end_step]:
+        if type(self).summary_hierarchy[initial_step] >= type(self).summary_hierarchy[end_step]:
             raise HierarchyMismatchError(initial_step, end_step)
 
         # Index portion of hierarchy list bookended by start and target granularity.
-        stack = acrru_config['hierarchy'][summary_hierarchy[initial_step] + 1: \
-                                          summary_hierarchy[end_step] + 1]
+        stack = acrru_config['hierarchy'][type(self).summary_hierarchy[initial_step] + 1: \
+                                          type(self).summary_hierarchy[end_step] + 1]
 
         return stack
 
     def get_next_step(self):
         next_agg = None
         if self.execution_plan:
-            next_agg = self.execution_plan.pop()
+            next_agg = self.execution_plan.pop(0)
         
         return next_agg
 

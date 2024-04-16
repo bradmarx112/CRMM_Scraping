@@ -1,5 +1,5 @@
 from langchain_core.prompts import (ChatPromptTemplate, SystemMessagePromptTemplate, PromptTemplate,
-                                    HumanMessagePromptTemplate, MessagesPlaceholder, MessagePromptTemplate)
+                                    HumanMessagePromptTemplate, MessagesPlaceholder)
 from langchain.schema import AIMessage, HumanMessage, SystemMessage
 
 

@@ -2,12 +2,13 @@ from collections import defaultdict
 
 from ACRRU.executor.accru_executor import ACRRUExecutor
 
-from utils.planning.aggregation_planner import ExecutionPlanner
+from utils.planning.execution_planner import ExecutionPlanner
 from utils.config import acrru_config
 
-from data_management.data_loader import ACRRULoader, ResearchLoader, SummaryLoader
+from data_management.structure.data_loader import ACRRULoader, ResearchLoader, SummaryLoader
 
-RESEARCH_FLAG = acrru_config['hierarchy'][0]
+# The second step of the hierarchy indicates the need to research based on logic from ExecutionPlanner 
+RESEARCH_FLAG = acrru_config['hierarchy'][1]
 
 class ACRRU:
 
@@ -30,7 +31,7 @@ class ACRRU:
 
         run_step = planner.get_next_step()
         loader = initial_loader
-
+        print(run_step)
         # Perform research step if necessary
         if run_step == RESEARCH_FLAG:
             acrru_output = self.research(loader, notes, save_results)
@@ -46,6 +47,7 @@ class ACRRU:
                                        entities=acrru_output)
         
         # Perform summary step(s) if necessary
+        print(run_step)
         if run_step:
             acrru_output = self.summarize(loader, planner, notes, save_results)
 

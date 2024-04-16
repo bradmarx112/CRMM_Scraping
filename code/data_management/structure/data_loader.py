@@ -1,11 +1,11 @@
 from utils.config import acrru_config
-from data_management.input.structure import ResearchInput, SummaryInput
+from data_management.structure.input import ResearchInput, SummaryInput
 from abc import ABC, abstractmethod
 from typing import List
 
 
 class ACRRULoader(ABC):
-    def __init__(self, task, crmm_path: str, crmm_file: str, entities):
+    def __init__(self, task, crmm_path: str, crmm_file: str, entities: dict):
         
         self.task = task
         self.crmm = self._read_crmm(crmm_path, crmm_file)
@@ -43,15 +43,15 @@ class ACRRULoader(ABC):
 
 
 class ResearchLoader(ACRRULoader):
-    def __init__(self, capability_files: dict, crmm_path: str, crmm_file: str, entities):
+    def __init__(self, capability_files: dict, crmm_path: str, crmm_file: str, entities: dict):
         self.capability_dict = self._read_capabilities(crmm_path, capability_files)
-        super(ResearchLoader, self).__init__(crmm_path, crmm_file, entities)
+        super(ResearchLoader, self).__init__('research', crmm_path, crmm_file, entities)
 
-    def construct_input(self, entities: list) -> List[ResearchInput]:
+    def construct_input(self, entities: dict) -> List[ResearchInput]:
         # Input as list of ResearchInput Dataclasses: each list element is input object for each capability
         # Input length = num. entities * num. capabilities
         input_list = []
-        for entity in entities:
+        for entity in entities.keys():
             input_list.extend(
                 ResearchInput(**{
                 'crmm_info': self.crmm, 
