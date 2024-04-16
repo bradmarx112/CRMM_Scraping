@@ -31,7 +31,6 @@ class ACRRU:
 
         run_step = planner.get_next_step()
         loader = initial_loader
-        print(run_step)
         # Perform research step if necessary
         if run_step == RESEARCH_FLAG:
             acrru_output = self.research(loader, notes, save_results)
@@ -47,7 +46,6 @@ class ACRRU:
                                        entities=acrru_output)
         
         # Perform summary step(s) if necessary
-        print(run_step)
         if run_step:
             acrru_output = self.summarize(loader, planner, notes, save_results)
 

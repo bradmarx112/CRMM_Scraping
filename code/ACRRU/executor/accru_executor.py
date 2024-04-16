@@ -5,6 +5,7 @@ from data_management.structure.data_loader import ACRRULoader
 
 from utils.logging.google_sheets_agent import GoogleSheetsLoggingAgent
 from utils.config import acrru_config
+from utils.planning.api_backoff import retry_with_exponential_backoff
 from langchain.agents import AgentExecutor
 
 
@@ -29,9 +30,14 @@ class ACRRUExecutor:
 
         self.agent_executor = self.agent_executor_dict[mode]
 
+    @retry_with_exponential_backoff
+    def invoke(self, **kwargs):
+        return self.agent_executor.invoke(**kwargs)
+
     def execute(self, input_args: ACRRUInput, task: str, notes: str) -> dict:
         args = input_args.construct_input()
-        output = self.agent_executor.invoke(args)
+
+        output = self.invoke(args)
 
         if self.logger:
             self.logger.log_response(self.agent_executor.agent, output, args, task, notes)

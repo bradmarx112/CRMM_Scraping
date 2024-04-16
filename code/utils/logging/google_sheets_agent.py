@@ -38,9 +38,9 @@ class GoogleSheetsLoggingAgent:
         # Get intermediate queries the model called itself
         int_steps = '\n\n'.join([int_step[0].log.strip() for int_step in agent_output['intermediate_steps']])
         # Get the input template
-        template = '\n'.join([f'{input_value.content}' for input_value in agent.steps[1].format_messages(**test_input_dict, agent_scratchpad=['']) if input_value.__class__.__name__ == 'SystemMessage'])
+        template = '\n'.join([f'{input_value.content}' for input_value in agent.runnable.steps[1].format_messages(**test_input_dict, agent_scratchpad=['']) if input_value.__class__.__name__ == 'SystemMessage'])
         # Get the input prompt
-        prompt = '\n'.join([f'{input_value.content}' for input_value in agent.steps[1].format_messages(**test_input_dict, agent_scratchpad=['']) if input_value.__class__.__name__ == 'HumanMessage'])
+        prompt = '\n'.join([f'{input_value.content}' for input_value in agent.runnable.steps[1].format_messages(**test_input_dict, agent_scratchpad=['']) if input_value.__class__.__name__ == 'HumanMessage'])
 
         # Return a list of everything!
         return [cur_time, test_input_dict['org_name'], task, notes, 

@@ -79,7 +79,6 @@ def main(args):
 
     # Construct execution planner
     planner = ExecutionPlanner(initial_step=args.initial_step, end_step=args.end_step)
-    print(planner.execution_plan)
 
     # Construct ACRRU 
     acrru = ACRRU(executor=executor, crmm_file=args.model_file_name)
@@ -91,5 +90,5 @@ def main(args):
                                            save_results=args.save_results)
 
 if __name__ == '__main__':
-    main(parse_args())
+    main(parse_args(("--initial_step", "research", "--end_step", "provider", "--model_type", "openai", "--agent_type", "openai", "--data_source", "local", "--model_file_name", "CRMM_AI_Summary", "--notes", "'first time running from codebase'")))
     
