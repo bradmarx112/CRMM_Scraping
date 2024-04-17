@@ -42,7 +42,7 @@ def create_loader_from_local(model_file_name: str,
         target_file_name = 'research' 
         with open(f'.\\{local_data_folder}\\{target_file_name}_entities.txt', 'r') as f:
             for line in f:
-                extracted_depenencies = line.split('|')
+                extracted_depenencies = line.strip().split('|')
                 entity = Entity.from_dependency_chain(dependency_chain=extracted_depenencies)
                 entity_list.append(entity)
         
