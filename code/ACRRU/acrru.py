@@ -102,6 +102,7 @@ class ACRRU:
 
         for model_input in loader:
             output = self.executor.execute(model_input, task=loader.task, notes=notes)
+            # Save the previous entity name as a subheader in the aggregate prompt for next level.
             output['topic'] = model_input.entity.name
             output_dict[model_input.entity.get_parent()].append(output)
 
