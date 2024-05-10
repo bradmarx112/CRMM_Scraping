@@ -18,7 +18,7 @@
                             "input_variables": ["entity", "summaries"]}
         }
     },
-    
+
     "capabilities": {"Capability 1": "Capability 1: Governance - Executive Level Engagement and Leadership",
                     "Capability 2": "Capability 2: Climate-Aware Planning",
                     "Capability 3": "Capability 3: Stakeholder and Community Collaboration",
@@ -36,7 +36,7 @@
         }
     },
 
-    "tools": {"tavily": {"max_results": 1},
+    "tools": {"tavily": {"max_results": 9},
               "brave": {"count": 2}}    
     
 }

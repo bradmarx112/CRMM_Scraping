@@ -39,8 +39,8 @@ def create_loader_from_local(model_file_name: str,
     # TODO: add logic for locally saved summary data
     entity_list = []
     if research_requested:
-        target_file_name = 'research' 
-        with open(f'.\\{local_data_folder}\\{target_file_name}_entities.txt', 'r') as f:
+        
+        with open(f'.\\{local_data_folder}\\local_query.txt', 'r') as f:
             for line in f:
                 extracted_depenencies = line.strip().split('|')
                 entity = Entity.from_dependency_chain(dependency_chain=extracted_depenencies)

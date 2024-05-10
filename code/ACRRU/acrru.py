@@ -1,4 +1,5 @@
 from collections import defaultdict
+import time
 
 from ACRRU.executor.accru_executor import ACRRUExecutor
 
@@ -12,10 +13,11 @@ RESEARCH_FLAG = acrru_config['hierarchy'][1]
 
 class ACRRU:
 
-    def __init__(self, executor: ACRRUExecutor, crmm_file: str, crmm_path: str=acrru_config['crmm_doc_path']):
+    def __init__(self, executor: ACRRUExecutor, crmm_file: str, execution_cooldown: int, crmm_path: str=acrru_config['crmm_doc_path']):
         self.executor = executor
         self.crmm_file = crmm_file
         self.crmm_path = crmm_path
+        self.cooldown_sec = execution_cooldown
 
     def orchestrate(self, 
                     initial_loader: ACRRULoader, 
@@ -105,6 +107,7 @@ class ACRRU:
             # Save the previous entity name as a subheader in the aggregate prompt for next level.
             output['topic'] = model_input.entity.name
             output_dict[model_input.entity.get_parent()].append(output)
+            time.sleep(self.cooldown_sec)
 
         return output_dict
 

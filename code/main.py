@@ -35,6 +35,7 @@ def parse_args(args=None):
     parser.add_argument('--gsheet_log',       type=bool,  default=True,      help='Controls logging output to Google Sheets record')
     parser.add_argument('--notes',            type=str,   default='',      help='Notes to include in metadata or logging for the given run.')
     parser.add_argument('--save_results',     type=bool,   default=True,      help='Controls saving output to database.')
+    parser.add_argument('--execution_cooldown',     type=int,   default=5,      help='Number of seconds to wait between entity executions.')
     if args is None: 
         return parser.parse_args()      ## For calling through command line
     return parser.parse_args(args)      ## For calling through notebook.
@@ -81,7 +82,7 @@ def main(args):
     planner = ExecutionPlanner(initial_step=args.initial_step, end_step=args.end_step)
 
     # Construct ACRRU 
-    acrru = ACRRU(executor=executor, crmm_file=args.model_file_name)
+    acrru = ACRRU(executor=executor, crmm_file=args.model_file_name, execution_cooldown=args.execution_cooldown)
 
     # Run ACRRU for all requested research and summary steps
     final_acrru_output = acrru.orchestrate(initial_loader=initial_loader,
@@ -90,4 +91,4 @@ def main(args):
                                            save_results=args.save_results)
 
 if __name__ == '__main__':
-    main(parse_args(("--initial_step", "research", "--end_step", "region", "--model_type", "openai", "--agent_type", "openai", "--data_source", "local", "--model_file_name", "CRMM_AI_Summary", "--notes", "Testing region rollup")))
+    main(parse_args(("--initial_step", "research", "--end_step", "region", "--model_type", "openai", "--agent_type", "openai", "--data_source", "local", "--model_file_name", "CRMM_Header", "--notes", "Milwaukee City Testing", "--execution_cooldown", "10")))
