@@ -26,7 +26,7 @@
                     "Capability 5": "Capability 5: Customer Engagement and Coordination"},
 
     "models": {"openai": {
-        "model_name": "gpt-4-turbo-preview",
+        "model_name": "gpt-4o",
         "model_temp": 0.0
     }},
 
