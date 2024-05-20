@@ -91,4 +91,4 @@ def main(args):
                                            save_results=args.save_results)
 
 if __name__ == '__main__':
-    main(parse_args(("--initial_step", "research", "--end_step", "region", "--model_type", "openai", "--agent_type", "openai", "--data_source", "local", "--model_file_name", "CRMM_Header", "--notes", "Milwaukee City Testing", "--execution_cooldown", "10")))
+    main(parse_args(("--initial_step", "research", "--end_step", "region", "--model_type", "openai", "--agent_type", "openai", "--data_source", "local", "--model_file_name", "CRMM_Header", "--notes", "Milwaukee City Testing", "--execution_cooldown", "3")))

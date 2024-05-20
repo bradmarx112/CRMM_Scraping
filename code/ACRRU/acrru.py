@@ -97,9 +97,9 @@ class ACRRU:
 
     def _run(self, loader: ACRRULoader, notes: str) -> dict:
         """
-        Runs the ACRRU executor over all provided data for one pass.
+        Runs the ACRRU executor over all provided data for one breadth-first pass.
         """
-        # Dictionary to return. key=entity name, value= list of ACRRU response related to that entity
+        # Dictionary to return. key=entity name, value=list of ACRRU response related to that entity
         output_dict = defaultdict(list)
 
         for model_input in loader:

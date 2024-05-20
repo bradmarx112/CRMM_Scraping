@@ -1,7 +1,2 @@
-Milwaukee We Energies|Milwaukee
-Milwaukee American Transmission Company|Milwaukee
-Milwaukee Waterworks|Milwaukee
-Milwaukee Municipal Sewer District|Milwaukee
-Milwaukee Department of Transportation|Milwaukee
-Milwaukee Climate & Equity Plan|Milwaukee
-Wisconsin Governor's Task Force on Climate Change|Milwaukee
+Baltimore Gas and Electric|Maryland
+Delmarva Power|Maryland

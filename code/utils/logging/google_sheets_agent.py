@@ -44,4 +44,4 @@ class GoogleSheetsLoggingAgent:
 
         # Return a list of everything!
         return [cur_time, test_input_dict['entity'], task, notes, 
-            template, prompt, int_steps, agent_output['output']]
+            template[:49999], prompt[:49999], int_steps[:49999], agent_output['output'][:49999]]
