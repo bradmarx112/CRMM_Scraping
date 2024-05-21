@@ -34,6 +34,7 @@ class ACRRU:
         run_step = planner.get_next_step()
         loader = initial_loader
         # Perform research step if necessary
+        # TODO: The current state requires research to be performed. Future iterations will allow for cached upstream reports.
         if run_step == RESEARCH_FLAG:
             acrru_output = self.research(loader, notes, save_results)
             
@@ -45,10 +46,11 @@ class ACRRU:
                                        crmm_path=self.crmm_path,
                                        crmm_file=self.crmm_file,
                                        entities=acrru_output)
+
+                acrru_output = self.summarize(loader, planner, notes, save_results)
         
-        # Perform summary step(s) if necessary
-        if run_step:
-            acrru_output = self.summarize(loader, planner, notes, save_results)
+        else: 
+            raise NotImplementedError('The current ACRRU version requires research to be performed.')
 
         return acrru_output
 
