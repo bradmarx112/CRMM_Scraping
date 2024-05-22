@@ -1,0 +1,3 @@
+OPENAI_API_KEY=[Key]
+TAVILY_API_KEY=[Key]
+GSHEETS_ACCT_CRED_PATH=[path to your credential JSON]
